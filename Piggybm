@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Piggy Build Mode – Commands & Logic</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; padding: 20px; }
+    h1, h2 { color: #d35400; }
+    .section { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background-color: #e67e22; color: white; }
+    code { background-color: #eee; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+  <h1>Piggy Build Mode</h1>
+  <p>Create your own Piggy maps with logic, triggers, and custom dialogue using Build Mode!</p>
+
+  <div class="section">
+    <h2>🧰 Basic Tools</h2>
+    <ul>
+      <li><strong>Build Mode:</strong> Place blocks, decorations, items, and NPCs.</li>
+      <li><strong>Event Mode:</strong> Connect triggers and logic gates to create interactions.</li>
+      <li><strong>Save/Load:</strong> Store your maps in slots and reload them anytime.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🧠 Logic Blocks & Triggers</h2>
+    <table>
+      <tr><th>Component</th><th>Description</th></tr>
+      <tr><td>Touch Trigger</td><td>Activates when a player touches the block.</td></tr>
+      <tr><td>Button Trigger</td><td>Activates when a player presses a button.</td></tr>
+      <tr><td>If Gate</td><td>Passes signal only if a condition is met.</td></tr>
+      <tr><td>AND Gate</td><td>Requires all connected signals to be active.</td></tr>
+      <tr><td>OR Gate</td><td>Activates if at least one signal is active.</td></tr>
+      <tr><td>NOT Gate</td><td>Inverts the signal: activates when input is off.</td></tr>
+      <tr><td>Dialogue Block</td><td>Displays text to the player with optional commands.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>💬 Dialogue Commands</h2>
+    <p>Use these commands inside a <code>Dialogue Block</code> to enhance storytelling:</p>
+    <table>
+      <tr><th>Command</th><th>Effect</th></tr>
+      <tr><td><code>!fade</code></td><td>Fades the dialogue text in or out.</td></tr>
+      <tr><td><code>!shake</code></td><td>Shakes the dialogue box for dramatic effect.</td></tr>
+      <tr><td><code>!color red</code></td><td>Changes text color (supports red, blue, green, etc.).</td></tr>
+      <tr><td><code>!wait 2</code></td><td>Waits 2 seconds before showing the next line.</td></tr>
+      <tr><td><code>!clear</code></td><td>Clears previous dialogue instantly.</td></tr>
+    </table>
+    <p>Example:</p>
+    <code>!fade<br>Intruder detected...<br>!wait 2<br>Prepare for lockdown.</code>
+  </div>
+
+  <div class="section">
+    <h2>📚 Examples</h2>
+    <ul>
+      <li><strong>Two-button door:</strong> Connect two <code>Button Triggers</code> to an <code>AND Gate</code> and then to a door.</li>
+      <li><strong>Trap zone:</strong> Use a <code>Touch Trigger</code> connected to a damage block.</li>
+      <li><strong>Story intro:</strong> Use a <code>Dialogue Block</code> with <code>!fade</code> and <code>!wait</code> commands.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🔗 Resources</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=eCA3X-Ulbso" target="_blank">Build Mode Tutorial</a></li>
+      <li><a href="https://www.tiktok.com/@duobmrxd/video/7507827438546652423" target="_blank">Dialogue Tricks on TikTok</a></li>
+      <li><a href="https://www.youtube.com/watch?v=9W0rMpmPgS8" target="_blank">AND Gate Explained</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
